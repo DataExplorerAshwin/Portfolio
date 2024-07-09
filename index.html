@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    body {
+        background-color: #f4f4f9; /* Light grey background */
+        font-family: 'Arial', sans-serif;
+        color: #333;
+    }
+    .navbar {
+        background-color: #004080; /* Dark blue */
+    }
+    .navbar-brand, .nav-link {
+        color: #fff !important;
+    }
+    .content-section {
+        background-color: #ffffff; /* White background for sections */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+    .skills-section {
+        padding: 50px 0;
+        background-color: #e8f4f8; /* Light blue */
+    }
+    .skill-card {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .skill-card img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    .footer {
+        background-color: #004080; /* Dark blue */
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #004080; /* Dark blue headings */
+    }
+    .btn-primary {
+        background-color: #004080;
+        border-color: #004080;
+    }
+    .btn-primary:hover {
+        background-color: #003366;
+        border-color: #003366;
+    }
+    .projects-section .card {
+        border: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .contact-section {
+        background-color: #e8f4f8; /* Light blue */
+        padding: 50px 0;
+    }
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+    .contact-form button {
+        background-color: #004080;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+    }
+    .contact-form button:hover {
+        background-color: #003366;
+    }
+</style>
+
+
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">About Me</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about-section">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects-section">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills-section">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+      
+
+    <!-- Main container for the content -->
+    <div class="container mt-5">
+        <!-- About Section -->
+        <section id="about-section" class="content-section">
+            <div class="container text-center my-5">
+                <h1>About</h1>
+                <img src="images/about/1.jpg" alt="Profile Picture" class="rounded mx-auto d-block" style="width: 150px; height: 150px;">
+                <p class="mt-4">
+                    👋 Hi there! I’m a data enthusiast with a passion for turning raw information into meaningful insights.
+                </p>
+                <p>
+                    My journey includes SQL, Python (Pandas, NumPy, SciPy, Matplotlib), Tableau, and Excel (VLookup, Conditional Formatting, Pivot Tables). I’ve also dabbled in deep learning with Convolutional Neural Networks (CNNs). Whether it’s visualizing military power, analyzing HR metrics, or diving into football World Cup data, I love transforming data into compelling stories. Let’s connect the dots!
+                </p>
+                <p>
+                    Welcome to my portfolio site, where I showcase my journey and expertise as a data analyst in the IT industry. Explore my diverse projects to see how I transform data into actionable insights, driving decision-making and innovation.
+                </p>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects-section" class="content-section">
+            <div class="container text-center my-5">
+                <h1>Projects</h1>
+                <div class="row">
+                    <!-- Project 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/projects/1.png" class="card-img-top" alt="Project 1 Image">
+                            <div class="card-body">
+                                <h5 class="card-title">OBJECT RECOGNITION USING CNN IN DEEP LEARNING</h5>
+                                <p class="card-text">Trained a CNN using Python and the CIFAR-10 dataset, which consists of 60,000 32x32 color images across 10 classes (with 6,000 images per class). Visualized training data, monitored accuracy and loss, evaluated predictions on the test set, and also visualized a random subset of 36 testing images. The CNN model achieved high accuracy in classifying these images.</p>
+                                <a href="https://github.com/Ashwin7777777/Data-Voyager-Portfolio/tree/master" class="btn btn-primary">Project Information</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/projects/2.png" class="card-img-top" alt="Project 2 Image">
+                            <div class="card-body">
+                                <h5 class="card-title">GLOBAL FIRE POWER IN POWER BI</h5>
+                                <p class="card-text">Datasets Utilized: Integrated data from Excel (military data), Python scripts (nuclear power data), SQL (top jets), notepad text data (Power Index rankings), web page (military personnel) and web URLs (images/videos). Dashboard Pages: Six pages summarizing various aspects of global military power, including Legends, Nuclear Power, Army, Air force, Navy, and NATO.</p>
+                                <a href="https://github.com/Ashwin7777777/Data-Voyager-Portfolio/tree/master" class="btn btn-primary">Project Information</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/projects/3.png" class="card-img-top" alt="Project 3 Image">
+                            <div class="card-body">
+                                <h5 class="card-title">HR DASHBOARD IN POWER BI</h5>
+                                <p class="card-text">Developed a dynamic HR dashboard in Power BI, showcasing key performance indicators (KPIs) through bar charts, pie charts, donut charts, matrix charts, and scorecards. Conducted comprehensive data transformation to ensure accuracy and relevance.</p>
+                                <a href="https://github.com/Ashwin7777777/Data-Voyager-Portfolio/tree/master" class="btn btn-primary">Project Information</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Project 4 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/projects/4.png" class="card-img-top" alt="Project 4 Image">
+                            <div class="card-body">
+                                <h5 class="card-title">FIFA WORLD CUP 1930 TO 2014 IN TABLEAU</h5>
+                                <p class="card-text">Developed an interactive Tableau dashboard visualizing football World Cup results. Leveraged data integration, advanced charting techniques, and dynamic filters to provide comprehensive insights into team performances, match outcomes, and historical trends.</p>
+                                <a href="https://github.com/Ashwin7777777/Data-Voyager-Portfolio/tree/master" class="btn btn-primary">Project Information</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/projects/5.png" class="card-img-top" alt="Project 5 Image">
+                            <div class="card-body">
+                                <h5 class="card-title">EMPLOYEE DATA ANALYTICS DASHBOARD</h5>
+                                <p class="card-text">Created a comprehensive Tableau dashboard for employee data analytics, utilizing advanced data visualization techniques. The dashboard includes detailed insights on employee demographics, performance metrics, and attrition rates.</p>
+                                <a href="https://github.com/Ashwin7777777/Data-Voyager-Portfolio/tree/master" class="btn btn-primary">Project Information</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/projects/6.png" class="card-img-top" alt="Project 6 Image">
+                            <div class="card-body">
+                                <h5 class="card-title">RETAIL RISE DASHBOARD IN EXCEL</h5>
+                                <p class="card-text">Created an Excel dashboard to analyze retail sales data, employing advanced Excel functions, pivot tables, and data transformation techniques to convert raw data into actionable insights.</p>
+                                <a href="https://github.com/Ashwin7777777/Data-Voyager-Portfolio/tree/master" class="btn btn-primary">Project Information</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Project 7 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/projects/7.png" class="card-img-top" alt="Project 7 Image">
+                            <div class="card-body">
+                                <h5 class="card-title">CHOCO STAFF ANALYSIS IN EXCEL</h5>
+                                <p class="card-text">Designed an Excel dashboard to analyze and visualize staff-related data within a chocolate factory, utilizing advanced Excel features such as pivot tables, charts, and conditional formatting for insightful analysis.</p>
+                                <a href="https://github.com/Ashwin7777777/Data-Voyager-Portfolio/tree/master" class="btn btn-primary">Project Information</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills-section" class="skills-section text-center">
+            <div class="container">
+                <h1 class="mb-5">Skills</h1>
+                <div class="row">
+                    <!-- Skill 1 -->
+                    <div class="col-md-3 skill-card">
+                        <img src="images/skills/1.png" alt="Python">
+                        <h5>Python</h5>
+                        <p>Experienced in data manipulation and analysis using Pandas, NumPy, and SciPy.</p>
+                        <a href="images/certificates/1.png" class="btn btn-primary" target="_blank">Link to Certification</a>
+                    </div>
+                    <!-- Skill 2 -->
+                    <div class="col-md-3 skill-card">
+                        <img src="images/skills/2.png" alt="Data Visualization">
+                        <h5>Data Visualization</h5>
+                        <p>Skilled in creating interactive and insightful dashboards using Tableau.</p>
+                        <a href="images/certificates/2.png" class="btn btn-primary" target="_blank">Link to Certification</a>
+                    </div>
+                    <!-- Skill 3 -->
+                    <div class="col-md-3 skill-card">
+                        <img src="images/skills/3.png" alt="SQL">
+                        <h5>SQL</h5>
+                        <p>Proficient in writing complex queries and managing databases.</p>
+                        <a href="images/certificates/3.png" class="btn btn-primary" target="_blank">Link to Certification</a>
+                    </div>
+                    <!-- Skill 4 -->
+                    <div class="col-md-3 skill-card">
+                        <img src="images/skills/4.png" alt="Data Storytelling">
+                        <h5>Data Storytelling</h5>
+                        <p>Experience in conveying complex data insights through storytelling techniques.</p>
+                        <a href="images/certificates/4.png" class="btn btn-primary" target="_blank">Link to Certification</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Skill 5 -->
+                    <div class="col-md-3 skill-card">
+                        <img src="images/skills/5.png" alt="Microsoft Excel">
+                        <h5>Microsoft Excel</h5>
+                        <p>Advanced knowledge of Excel functions, pivot tables, and data visualization.</p>
+                        <a href="images/certificates/5.png" class="btn btn-primary" target="_blank">Link to Certification</a>
+                    </div>
+                    <!-- Skill 6 -->
+                    <div class="col-md-3 skill-card">
+                        <img src="images/skills/6.png" alt="Microsoft Advertising">
+                        <h5>Microsoft Advertising</h5>
+                        <p>Proficient in managing and optimizing Microsoft Advertising campaigns.</p>
+                        <a href="images/certificates/6.png" class="btn btn-primary" target="_blank">Link to Certification</a>
+                    </div>
+                    <!-- Skill 7 -->
+                    <div class="col-md-3 skill-card">
+                        <img src="images/skills/7.png" alt="Finnacle Core Banking Application">
+                        <h5>Finnacle Core Banking Application</h5>
+                        <p>Expertise in using Finnacle for core banking operations and management.</p>
+                        <a href="images/certificates/7.png" class="btn btn-primary" target="_blank">Link to Certification</a>
+                    </div>
+                    <!-- Skill 8 -->
+                    <div class="col-md-3 skill-card">
+                        <img src="images/skills/8.png" alt="Jenkins">
+                        <h5>Jenkins</h5>
+                        <p>Skilled in using Jenkins for continuous integration and continuous delivery (CI/CD).</p>
+                        <a href="images/certificates/8.png" class="btn btn-primary" target="_blank">Link to Certification</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- My Education Section -->
+<section id="education" class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <h2 class="section-title"><img src="images/education/icon.png" alt="Education Icon" style="width: 50px; height: 50px;"> My Education</h2>
+          <p class="lead">Education Is Not The Learning Of Facts, But The Training Of The Mind To Think.</p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Education Card 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="images/education/college.png" class="card-img-top" alt="College Image">
+            <div class="card-body">
+              <h5 class="card-title">Bachelor of Technology in Information Technology</h5>
+              <p class="card-text"><strong>K.L.N College of Information Technology (KLNCIT), Sivaganga</strong></p>
+              <p class="card-text text-success">2014 – 2018 | Completed</p>
+            </div>
+          </div>
+        </div>
+        <!-- Education Card 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="images/education/school.png" class="card-img-top" alt="School Image">
+            <div class="card-body">
+              <h5 class="card-title">Higher Secondary Certificate (Computer Science)</h5>
+              <p class="card-text"><strong>S.B.O.A Matriculation and Higher Secondary School, Madurai</strong></p>
+              <p class="card-text text-success">2013 – 2014 | Completed</p>
+            </div>
+          </div>
+        </div>
+        <!-- Education Card 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="images/education/school.png" class="card-img-top" alt="School Image">
+            <div class="card-body">
+              <h5 class="card-title">Secondary School Leaving Certificate</h5>
+              <p class="card-text"><strong>S.B.O.A Matriculation and Higher Secondary School, Madurai</strong></p>
+              <p class="card-text text-success">2011 – 2012 | Completed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+        <!-- Contact Me Section -->
+<section id="contact-section" class="content-section">
+  <div class="container my-5">
+      <div class="row">
+          <div class="col-md-4">
+              <h4>Ashwin's Portfolio</h4>
+              <p>Thank you for visiting my personal portfolio website. Find me on social media.” 😊</p>
+          </div>
+          <div class="col-md-4">
+              <h4>Quick Links</h4>
+              <ul class="list-unstyled">
+                  <li><a href="#about-section">About</a></li>
+                  <li><a href="#projects-section">Projects</a></li>
+                  <li><a href="#skills-section">Skills</a></li>
+                  <li><a href="#education">Education</a></li>
+              </ul>
+          </div>
+          <div class="col-md-4">
+              <h4>Contact Info</h4>
+              <p>
+
+                <img src="images/icons/mail.png" alt="Email Icon" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                <a href="mailto:bashwinmail@gmail.com" style="color: #ffcc00; text-decoration: underline;">bashwinmail@gmail.com</a><br>
+                <img src="images/icons/mobile.png" alt="Phone Icon" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                +91-9345488846<br>
+                <img src="images/icons/address.png" alt="Address Icon" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                Madurai, Tamil Nadu, India – 625016
+
+              </p>
+              <div>
+
+                  <a href="https://www.linkedin.com" target="https://www.linkedin.com/in/win-ten-85532a235">
+                      <img src="icons/linkedin.png" alt="LinkedIn" style="width: 30px; margin-right: 10px;">
+                  </a>
+                  <a href="https://github.com" target="https://github.com/Ashwin7777777/Data-Voyager-Portfolio">
+                      <img src="icons/github.png" alt="GitHub" style="width: 30px; margin-right: 10px;">
+                  </a>
+                  <a href="https://twitter.com" target="_blank">
+                      <img src="icons/twitter.png" alt="Twitter" style="width: 30px; margin-right: 10px;">
+                  </a>
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
